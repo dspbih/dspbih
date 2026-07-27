@@ -1,1 +1,118 @@
+/* ==========================
+   DSP BiH - Moderni stil
+   ========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#07111d;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 60px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ffd700;
+    text-shadow:0 0 12px #ffd700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#00152d,#004b87,#00152d);
+    padding:40px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+    color:#fff;
+    text-shadow:0 0 25px rgba(255,255,255,.4);
+}
+
+.hero p{
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 40px;
+    border-radius:50px;
+    background:#ffd700;
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.3s;
+    box-shadow:0 0 25px rgba(255,215,0,.5);
+}
+
+.button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 40px rgba(255,215,0,.9);
+}
+
+section{
+    padding:100px 10%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#000;
+    color:#aaa;
+}
