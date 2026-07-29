@@ -62,10 +62,12 @@ body{
     min-height:70vh;
 }
 
-.logo{
-    width:90px;
-    height:auto;
-    margin-bottom:20px;
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
 }
 }
 
