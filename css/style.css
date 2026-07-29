@@ -56,3 +56,65 @@ body{
 .menu a:hover{
     color:#ffd700;
 }
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    min-height:70vh;
+}
+
+.logo{
+    width:180px;
+    margin-bottom:30px;
+}
+
+.hero h2{
+    font-size:56px;
+    color:#003366;
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+.opis{
+    font-size:24px;
+    color:#444;
+    line-height:1.7;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+
+@media (max-width:768px){
+
+.header{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.header-right{
+    width:100%;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.opis{
+    font-size:20px;
+}
+
+.logo{
+    width:140px;
+}
+
+}
