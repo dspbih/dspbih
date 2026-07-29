@@ -63,8 +63,10 @@ body{
 }
 
 .logo{
-    width:180px;
-    margin-bottom:30px;
+    width:90px;
+    height:auto;
+    margin-bottom:20px;
+}
 }
 
 .hero h2{
