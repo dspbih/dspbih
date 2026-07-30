@@ -14,12 +14,18 @@ body {
 
 .hero {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.hero-image {
+.hero-image,
+.hero img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 /* =====================================================
    RESPONSIVE DESIGN - MOBITEL I TABLET
