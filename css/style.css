@@ -1,3 +1,7 @@
+/* =====================================================
+   DSP BiH - Responsive Style
+===================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +11,11 @@
 html,
 body {
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
     background: #ffffff;
 }
+
+/* Hero sekcija */
 
 .hero {
     width: 100%;
@@ -18,167 +23,14 @@ body {
     padding: 0;
 }
 
-.hero-image,
-.hero img {
+.hero-image {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
 }
-/* =====================================================
-   RESPONSIVE DESIGN - MOBITEL I TABLET
-===================================================== */
 
 /* Sve slike */
-img{
-    max-width:100%;
-    height:auto;
-    display:block;
-}
-
-/* Glavni sadržaj */
-.container,
-.wrapper,
-main{
-    width:100%;
-    max-width:1400px;
-    margin:auto;
-}
-
-/* Hero slika */
-.hero img,
-.banner img,
-.header-image img{
-    width:100%;
-    height:auto;
-}
-
-/* Tablet */
-@media screen and (max-width:992px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    .container,
-    .wrapper,
-    main{
-        width:100%;
-        padding:10px;
-    }
-
-    .top-menu,
-    nav ul{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-
-    nav li{
-        margin:5px;
-    }
-
-    .row,
-    .content,
-    .columns{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .left,
-    .center,
-    .right{
-        width:100%;
-        margin-bottom:15px;
-    }
-
-    .program-grid{
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:10px;
-    }
-
-    .news-grid{
-        display:grid;
-        grid-template-columns:1fr;
-    }
-
-    .footer{
-        display:flex;
-        flex-direction:column;
-        text-align:center;
-    }
-}
-
-/* Mobitel */
-@media screen and (max-width:768px){
-
-    h1{
-        font-size:28px;
-    }
-
-    h2{
-        font-size:22px;
-    }
-
-    h3{
-        font-size:18px;
-    }
-
-    .program-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    nav li{
-        width:100%;
-        text-align:center;
-    }
-
-    .button,
-    button{
-        width:100%;
-    }
-}
-
-/* Mali telefoni */
-@media screen and (max-width:480px){
-
-    .program-grid{
-        grid-template-columns:1fr;
-    }
-
-    img{
-        width:100%;
-        height:auto;
-    }
-
-    body{
-        font-size:15px;
-    }
-}
-/* ==========================================
-   RESPONSIVE - TELEFON I TABLET
-========================================== */
-
-html,
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 img {
     display: block;
@@ -186,41 +38,38 @@ img {
     height: auto;
 }
 
-/* Svi glavni blokovi */
-.container,
-.wrapper,
-header,
-nav,
-main,
-section,
-footer {
-    width: 100%;
-    max-width: 100%;
-}
+/* TABLET */
 
-/* Tablet */
-@media (max-width:1024px){
+@media screen and (max-width: 1024px) {
 
-    body{
-        zoom:0.85;
+    .hero-image {
+        width: 100%;
+        height: auto;
     }
 
 }
 
-/* Telefon */
-@media (max-width:768px){
+/* MOBITEL */
 
-    body{
-        zoom:0.55;
+@media screen and (max-width: 768px) {
+
+    .hero-image {
+        width: 100%;
+        height: auto;
     }
 
 }
 
-/* Mali telefoni */
-@media (max-width:480px){
+/* MALI MOBITELI */
 
-    body{
-        zoom:0.42;
+@media screen and (max-width: 480px) {
+
+    .hero-image {
+        width: 100%;
+        height: auto;
     }
 
 }
+    
+
+
