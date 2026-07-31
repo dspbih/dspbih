@@ -8,15 +8,10 @@
     box-sizing:border-box;
 }
 
-html{
-    width:100%;
-    height:100%;
-    overflow-x:hidden;
-}
-
+html,
 body{
     width:100%;
-    min-height:100vh;
+    height:100%;
     overflow-x:hidden;
     background:#000;
     font-family:Arial, Helvetica, sans-serif;
@@ -28,7 +23,7 @@ body{
 
 .hero{
     width:100%;
-    min-height:calc(100dvh - 80px);
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -37,12 +32,11 @@ body{
 }
 
 .hero img{
-    width:100%;
-    height:100%;
     display:block;
-    object-fit:contain;
+    width:100%;
+    height:100vh;
+    object-fit:cover;
     object-position:center center;
-    max-width:none;
 }
 
 /* =========================
@@ -51,68 +45,44 @@ body{
 
 @media (max-width:1024px){
 
-    .hero{
-        min-height:100dvh;
-    }
-
-    .hero img{
-        object-fit:cover;
-        object-position:center;
-    }
+.hero img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
 
 }
 
 /* =========================
-   MOBITEL
+   TELEFON
 ========================= */
 
 @media (max-width:768px){
 
-    .hero{
-        min-height:100dvh;
-    }
+.hero{
+    min-height:100vh;
+}
 
-    .hero img{
-        object-fit:cover;
-        object-position:center top;
-    }
+.hero img{
+    width:100%;
+    height:100vh;
+    object-fit:contain;
+    object-position:center;
+}
 
 }
 
 /* =========================
-   MALI MOBITELI
+   MALI TELEFONI
 ========================= */
 
 @media (max-width:480px){
 
-    .hero{
-        min-height:100dvh;
-    }
-
-    .hero img{
-        object-fit:cover;
-        object-position:center top;
-    }
-
+.hero img{
+    width:100%;
+    height:100vh;
+    object-fit:contain;
 }
 
-/* =========================
-   ULTRA MALI EKRANI
-========================= */
-
-@media (max-width:360px){
-
-    .hero img{
-        object-position:center top;
-    }
-
-}
-
-/* =========================
-   SEKCIJE
-========================= */
-
-section{
-    overflow:hidden;
 }
 
