@@ -11,31 +11,34 @@
 html,
 body{
     width:100%;
-    height:100%;
+    min-height:100%;
     overflow-x:hidden;
+    overflow-y:auto;
     background:#000;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 /* =========================
-
-
+   HERO
+========================= */
 
 .hero{
-    min-height:100svh;
+    width:100%;
+    min-height:100dvh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:8px 0;   /* bilo je 15-20px */
+    padding:0;
 }
 
 .hero img{
+    display:block;
     width:100%;
-    height:100%;
+    height:auto;
+    max-height:100dvh;
     object-fit:contain;
-    transform:scale(0.97);   /* umjesto 1 ili 0.98 */
+    object-position:center;
 }
-
 
 /* =========================
    TABLET
@@ -43,10 +46,15 @@ body{
 
 @media (max-width:1024px){
 
+.hero{
+    min-height:100dvh;
+}
+
 .hero img{
     width:100%;
-    height:100vh;
-    object-fit:cover;
+    height:auto;
+    max-height:100dvh;
+    object-fit:contain;
 }
 
 }
@@ -58,14 +66,14 @@ body{
 @media (max-width:768px){
 
 .hero{
-    min-height:100vh;
+    min-height:100dvh;
 }
 
 .hero img{
     width:100%;
-    height:100vh;
+    height:auto;
+    max-height:100dvh;
     object-fit:contain;
-    object-position:center;
 }
 
 }
@@ -78,7 +86,8 @@ body{
 
 .hero img{
     width:100%;
-    height:100vh;
+    height:auto;
+    max-height:100dvh;
     object-fit:contain;
 }
 
