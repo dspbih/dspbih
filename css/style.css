@@ -39,9 +39,10 @@ body{
 .hero img{
     width:100%;
     height:100%;
+    display:block;
     object-fit:cover;
     object-position:center center;
-    display:block;
+    max-width:none;
 }
 
 /* =========================
@@ -50,14 +51,14 @@ body{
 
 @media (max-width:1024px){
 
-.hero{
-    min-height:100dvh;
-}
+    .hero{
+        min-height:100dvh;
+    }
 
-.hero img{
-    object-fit:cover;
-    object-position:center;
-}
+    .hero img{
+        object-fit:cover;
+        object-position:center;
+    }
 
 }
 
@@ -67,16 +68,14 @@ body{
 
 @media (max-width:768px){
 
-.hero{
-    min-height:100dvh;
-}
+    .hero{
+        min-height:100dvh;
+    }
 
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
-}
+    .hero img{
+        object-fit:cover;
+        object-position:center top;
+    }
 
 }
 
@@ -86,16 +85,14 @@ body{
 
 @media (max-width:480px){
 
-.hero{
-    min-height:100dvh;
-}
+    .hero{
+        min-height:100dvh;
+    }
 
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
-}
+    .hero img{
+        object-fit:cover;
+        object-position:center top;
+    }
 
 }
 
@@ -105,20 +102,15 @@ body{
 
 @media (max-width:360px){
 
-.hero img{
-    object-position:center top;
-}
+    .hero img{
+        object-position:center top;
+    }
 
 }
 
 /* =========================
-   SPRJEČAVA BIJELE RUBOVE
+   SEKCIJE
 ========================= */
-
-img{
-    max-width:100%;
-    height:auto;
-}
 
 section{
     overflow:hidden;
