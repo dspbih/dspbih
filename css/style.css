@@ -1,30 +1,70 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* HTML I BODY */
+
 html,
 body {
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
-    background: #ffffff;
+    background: #000;
 }
 
+/* HERO SEKCIJA */
 
-    
-
-
-.hero-image {
+.hero {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
 }
+
+/* GLAVNA SLIKA */
 
 .hero-image {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center center;
+}
+
+/* TABLETI */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: calc(100vh - 70px);
+    }
+
+}
+
+/* TELEFONI */
+
+@media (max-width: 480px) {
+
+    .hero {
+        height: calc(100vh - 65px);
+    }
+
+}
+
+/* VEĆI EKRANI */
+
+@media (min-width: 1024px) {
+
+    .hero {
+        height: calc(100vh - 90px);
+    }
+
 }
 
