@@ -1,6 +1,6 @@
-/* ===========================
+/* =========================
    RESET
-=========================== */
+========================= */
 
 *{
     margin:0;
@@ -11,30 +11,27 @@
 html{
     width:100%;
     height:100%;
+    overflow-x:hidden;
 }
 
 body{
     width:100%;
-    min-height:100svh;
-    min-height:100dvh;
+    min-height:100vh;
     overflow-x:hidden;
     background:#000;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* ===========================
+/* =========================
    HERO
-=========================== */
+========================= */
 
 .hero{
     width:100%;
-    min-height:100svh;
-    min-height:100dvh;
-
+    min-height:calc(100dvh - 80px);
     display:flex;
     justify-content:center;
     align-items:center;
-
     overflow:hidden;
     background:#000;
 }
@@ -42,61 +39,14 @@ body{
 .hero img{
     width:100%;
     height:100%;
-    display:block;
-
     object-fit:cover;
     object-position:center center;
+    display:block;
 }
 
-/* ===========================
-   DESKTOP
-=========================== */
-
-@media (min-width:1400px){
-
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-}
-
-/* ===========================
-   LAPTOP
-=========================== */
-
-@media (max-width:1399px){
-
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-}
-
-/* ===========================
-   TABLET HORIZONTAL
-=========================== */
-
-@media (max-width:1180px){
-
-.hero{
-    min-height:100dvh;
-}
-
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-}
-
-/* ===========================
-   TABLET VERTIKALNO
-=========================== */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width:1024px){
 
@@ -105,62 +55,72 @@ body{
 }
 
 .hero img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
+    object-fit:cover;
     object-position:center;
 }
 
 }
 
-/* ===========================
-   TELEFONI
-=========================== */
+/* =========================
+   MOBITEL
+========================= */
 
 @media (max-width:768px){
 
 .hero{
     min-height:100dvh;
-    padding:0;
 }
 
 .hero img{
     width:100%;
     height:100%;
-    object-fit:contain;
-    object-position:center;
+    object-fit:cover;
+    object-position:center top;
 }
 
 }
 
-/* ===========================
-   MALI TELEFONI
-=========================== */
+/* =========================
+   MALI MOBITELI
+========================= */
 
 @media (max-width:480px){
-
-.hero img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    object-position:center;
-}
-
-}
-
-/* ===========================
-   LANDSCAPE TELEFON
-=========================== */
-
-@media (orientation:landscape) and (max-height:600px){
 
 .hero{
     min-height:100dvh;
 }
 
 .hero img{
-    object-fit:contain;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
 }
 
+}
+
+/* =========================
+   ULTRA MALI EKRANI
+========================= */
+
+@media (max-width:360px){
+
+.hero img{
+    object-position:center top;
+}
+
+}
+
+/* =========================
+   SPRJEČAVA BIJELE RUBOVE
+========================= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+section{
+    overflow:hidden;
 }
 
