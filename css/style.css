@@ -1,114 +1,166 @@
-/* RESET */
+/* ===========================
+   RESET
+=========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* HTML I BODY */
-
-html {
-    font-size: 100%;
+html{
+    width:100%;
+    height:100%;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: #000;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    width:100%;
+    min-height:100svh;
+    min-height:100dvh;
+    overflow-x:hidden;
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-/* HERO */
+/* ===========================
+   HERO
+=========================== */
 
-.hero {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2vw;
+.hero{
+    width:100%;
+    min-height:100svh;
+    min-height:100dvh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    background:#000;
 }
 
-/* KONTEJNER */
+.hero img{
+    width:100%;
+    height:100%;
+    display:block;
 
-.container {
-    width: 92%;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
+    object-fit:cover;
+    object-position:center center;
 }
 
-/* SLIKA */
+/* ===========================
+   DESKTOP
+=========================== */
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    object-fit: contain;
+@media (min-width:1400px){
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* NASLOVI */
-
-h1 {
-    font-size: clamp(2rem, 6vw, 4.5rem);
 }
 
-h2 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
+/* ===========================
+   LAPTOP
+=========================== */
+
+@media (max-width:1399px){
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-p {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    line-height: 1.6;
 }
 
-/* TABLET */
+/* ===========================
+   TABLET HORIZONTAL
+=========================== */
+
+@media (max-width:1180px){
+
+.hero{
+    min-height:100dvh;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+}
+
+/* ===========================
+   TABLET VERTIKALNO
+=========================== */
 
 @media (max-width:1024px){
 
-    .container{
-        width:95%;
-    }
+.hero{
+    min-height:100dvh;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+}
 
 }
 
-/* TELEFON */
+/* ===========================
+   TELEFONI
+=========================== */
 
 @media (max-width:768px){
 
-    .hero{
-        min-height:100vh;
-        padding:4vw;
-    }
+.hero{
+    min-height:100dvh;
+    padding:0;
+}
 
-    .container{
-        width:96%;
-    }
-
-    .hero img{
-        width:90%;
-    }
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+}
 
 }
 
-/* MALI TELEFONI */
+/* ===========================
+   MALI TELEFONI
+=========================== */
 
 @media (max-width:480px){
 
-    .hero{
-        padding:5vw;
-    }
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+}
 
-    .container{
-        width:98%;
-    }
+}
 
-    .hero img{
-        width:85%;
-    }
+/* ===========================
+   LANDSCAPE TELEFON
+=========================== */
+
+@media (orientation:landscape) and (max-height:600px){
+
+.hero{
+    min-height:100dvh;
+}
+
+.hero img{
+    object-fit:contain;
+}
 
 }
 
